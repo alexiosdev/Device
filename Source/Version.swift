@@ -41,8 +41,8 @@ public enum Version: String {
     case iPodTouch6Gen
     
     /*** Simulator ***/
-    case Simulator
+    case simulator
     
     /*** Unknown ***/
-    case Unknown
+    case unknown
 }
