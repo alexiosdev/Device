@@ -107,8 +107,8 @@ public class Device {
     }
     
     static public func size() -> Size {
-        let w: Double = Double(UIScreen.main().bounds.width)
-        let h: Double = Double(UIScreen.main().bounds.height)
+        let w: Double = Double(UIScreen.main.bounds.width)
+        let h: Double = Double(UIScreen.main.bounds.height)
         let screenHeight: Double = max(w, h)
         
         switch screenHeight {
@@ -117,7 +117,7 @@ public class Device {
             case 568:
                 return Size.screen4Inch
             case 667:
-                return UIScreen.main().scale == 3.0 ? Size.screen5_5Inch : Size.screen4_7Inch
+                return UIScreen.main.scale == 3.0 ? Size.screen5_5Inch : Size.screen4_7Inch
             case 736:
                 return Size.screen5_5Inch
             case 1024:
